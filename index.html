@@ -42,8 +42,41 @@
 
     p {
       line-height: 1.8em;
+			font-size: 1em;
     }
+		
+		.tags{
+			margin: 0 auto;
+		}
       
+		.tag{
+			margin: 0px;
+			line-height: .5rem;;
+		}
+		
+		.card-content{
+			overflow: auto;
+		}
+		
+		::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+		
   </style>
 </head>
 
@@ -136,9 +169,13 @@
                     </figure>
                   </a>
                 </div>
+                <div class="card-content" style= "height: 250px;">
+                <div class="tags"><span class="tag">HTML5</span><span class="tag">CSS</span><span class="tag">Javascript</span><span class="tag">React</span></div>
+                	<p style="">A simple JS/CSS game in continuous development with a friend of mine - randomly generated dungeon layouts, iterative level expansion, and loads of bad humor.</p>
+                	</div>
                 <div class="card-footer">
-                  <a href="https://musing-bell-a11d8f.netlify.com/" target="_blank" class="card-footer-item is-size-6 foot has-text-black">View Hosted <span style="font-size: 1.5em; margin: 10px"><i class="fas fa-desktop"></i></span></a>
-                  <a href="https://github.com/Pawtang/roguelike" target="_blank" class="card-footer-item is-size-6 foot has-text-black">View Source Code <span style="font-size: 1.5em; margin: 10px"><i class="fab fa-github-square"></i></span></a>
+                  <a href="https://musing-bell-a11d8f.netlify.com/" target="_blank" class="card-footer-item is-size-6 foot has-text-black">Hosted <span style="font-size: 1.5em; margin: 10px"><i class="fas fa-desktop"></i></span></a>
+                  <a href="https://github.com/Pawtang/roguelike" target="_blank" class="card-footer-item is-size-6 foot has-text-black">Source Code<span style="font-size: 1.5em; margin: 10px"><i class="fab fa-github-square"></i></span></a>
                 </div>
               </div>
             </div>
@@ -157,9 +194,13 @@
                     </figure>
                   </a>
                 </div>
+                 <div class="card-content" style= "height: 250px;">
+                 <div class="tags"><span class="tag">HTML5</span><span class="tag">CSS</span></div>
+                	<p style="">So far, just the front-end for a blog. Planning to use this to learn implementation of node.js, React, and mongoDB to build out a fully-functional blog, which can then be modified as a template for future blogs. </p>
+                	</div>
                 <div class="card-footer">
-                  <a href="https://naughty-hawking-7bc203.netlify.com/" target="_blank" class="card-footer-item is-size-6 foot has-text-black">View Hosted <span style="font-size: 1.5em; margin: 10px"><i class="fas fa-desktop"></i></span></a>
-                  <a href="https://github.com/Pawtang/HWIT-Project" target="_blank" class="card-footer-item is-size-6 foot has-text-black">View Source Code <span style="font-size: 1.5em; margin: 10px"><i class="fab fa-github-square"></i></span></a>
+                  <a href="https://naughty-hawking-7bc203.netlify.com/" target="_blank" class="card-footer-item is-size-6 foot has-text-black">Hosted <span style="font-size: 1.5em; margin: 10px"><i class="fas fa-desktop"></i></span></a>
+                  <a href="https://github.com/Pawtang/HWIT-Project" target="_blank" class="card-footer-item is-size-6 foot has-text-black">Source Code<span style="font-size: 1.5em; margin: 10px"><i class="fab fa-github-square"></i></span></a>
                 </div>
               </div>
             </div>
@@ -177,8 +218,12 @@
                     </figure>
                   </a>
                 </div>
+                 <div class="card-content" style= "height: 250px;">
+                 <div class="tags"><span class="tag">HTML5</span><span class="tag">CSS</span></div>
+                	<p style="">Restaurant website for a place down in Pilsen - simple one-pager, my favorite style. Currently redoing menus to integrate them into the site with a unified style.</p>
+                	</div>
                 <div class="card-footer">
-                  <a href="http://americanosrestaurant.com/" target="_blank" class="card-footer-item is-size-6 foot has-text-black">View Hosted <span style="font-size: 1.5em; margin: 10px"><i class="fas fa-desktop"></i></span></a>
+                  <a href="http://americanosrestaurant.com/" target="_blank" class="card-footer-item is-size-6 foot has-text-black">Hosted <span style="font-size: 1.5em; margin: 10px"><i class="fas fa-desktop"></i></span></a>
                 </div>
               </div>
             </div>
@@ -218,14 +263,14 @@
           <div class="tile is-parent">
             <div class="tile is-child box">
               <h2 class="title is-size-4 level-item">Tooling Design</h2>
-              <span style="font-size: 4em" class="level-item"><i class="fas fa-toolbox"></i></i></span>
+              <span style="font-size: 4em" class="level-item"><i class="fas fa-toolbox"></i></span>
             </div>
           </div>
 
           <div class="tile is-parent">
             <div class="tile is-child box">
               <h2 class="title is-size-4 level-item">Project Management</h2>
-              <span style="font-size: 4em" class="level-item"><i class="fas fa-project-diagram"></i></i></span>
+              <span style="font-size: 4em" class="level-item"><i class="fas fa-project-diagram"></i></span>
 
             </div>
           </div>
