@@ -1,185 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Ben Dibuz Portfolio</title>
+    <link rel="stylesheet" href="css/bulma.css" />
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"> -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/946f097186.js"
+      crossorigin="anonymous"
+    ></script>
 
-<head>
-  <meta charset="UTF-8">
-  <title>Ben Dibuz Portfolio</title>
-  <link rel="stylesheet" href="css/bulma.css">
-  <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"> -->
-  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/946f097186.js" crossorigin="anonymous"></script>
+    <style>
+      .hero-background {
+        /* background-image: url(https://images.unsplash.com/photo-1447927228194-acfa3d1b45c4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80); */
+        /* background-image: url(https://images.unsplash.com/photo-1476553986076-d59060d397e4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1389&q=80); */
+        background-image: url("src/assets/bg.jpg");
+        background-size: cover;
+        background-position: center;
+      }
 
+      img:hover {
+        opacity: 0.8;
+      }
 
-  <style>
-    .hero-background {
-      /* background-image: url(https://images.unsplash.com/photo-1447927228194-acfa3d1b45c4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80); */
-      background-image: url(https://images.unsplash.com/photo-1476553986076-d59060d397e4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1389&q=80);
-      background-size: cover;
-      background-position: center;
-    }
+      .foot:hover {
+        background-color: rgb(230, 230, 230);
+      }
 
-    img:hover {
-      opacity: 0.8;
-    }
+      .trans {
+        opacity: 0.9;
+      }
 
-    .foot:hover {
-      background-color: rgb(230, 230, 230);
-    }
+      .active {
+        opacity: 1 !important;
+        background-color: #101b1d;
+        color: white;
+      }
 
-    .trans {
-      opacity: .9;
-    }
+      .active:hover {
+        background-color: #213538 !important;
+        color: white !important;
+      }
 
-    .active {
-      opacity: 1 !important;
-      background-color: #101B1D;
-      color: white;
-    }
+      p {
+        line-height: 1.8em;
+        font-size: 1em;
+      }
 
-    .active:hover {
-      background-color: #213538 !important;
-      color: white !important;
-    }
+      .tags {
+        margin: 0 auto;
+      }
 
-    p {
-      line-height: 1.8em;
-      font-size: 1em;
-    }
+      .tag {
+        margin: 0px;
+        line-height: 0.5rem;
+      }
 
-    .tags {
-      margin: 0 auto;
-    }
+      .card-content {
+        overflow: auto;
+      }
 
-    .tag {
-      margin: 0px;
-      line-height: .5rem;
-      ;
-    }
+      ::-webkit-scrollbar {
+        width: 5px;
+      }
 
-    .card-content {
-      overflow: auto;
-    }
+      /* Track */
+      ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+      }
 
-    ::-webkit-scrollbar {
-      width: 5px;
-    }
+      /* Handle */
+      ::-webkit-scrollbar-thumb {
+        background: #888;
+      }
 
-    /* Track */
-    ::-webkit-scrollbar-track {
-      background: #f1f1f1;
-    }
+      /* Handle on hover */
+      ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+      }
+    </style>
+  </head>
 
-    /* Handle */
-    ::-webkit-scrollbar-thumb {
-      background: #888;
-    }
-
-    /* Handle on hover */
-    ::-webkit-scrollbar-thumb:hover {
-      background: #555;
-    }
-  </style>
-</head>
-
-<body style=" font-family: 'Roboto', sans-serif;">
-  <nav class="navbar is-fixed-top has-shadow is-tab trans">
-    <a class="navbar-item active is-size-4-mobile is-size-4-tablet is-size-5-desktop" href="#/" id="btn-web"><span>Web Development</span></a>
-    <a class="navbar-item is-size-4-mobile is-size-4-tablet is-size-5-desktop" href="#/" id="btn-eng"><span>Engineering</span></a>
-  </nav>
-  <section class="hero is-large hero-background is-dark">
-    <div class="hero-body">
-      <div class="container">
-        <h1 class="title is-size-1 level-item is-spaced">
-          BEN DIBUZ
-        </h1>
-        <h2 class="subtitle level-item is-size-4">Engineer, Curious Person</h2>
-      </div>
-    </div>
-  </section>
-
-
-  <div id="web-dev" class="" style="background-image: url(src/assets/memphis-mini.png); background-repeat: repeat; background-attachment: fixed;">
-    <div class="section">
-      <div class="container">
-        <h1 class="title is-size-1">ABOUT ME</h1>
-        <div class="card">
-          <div class="card-content">
-            <p class="is-size-6">I am a mechanical engineer studying python, data engineering, algorithms and data visualization in my free time, working to pivot into data engineering as a career. You can learn more about me on my <a href = "https://www.linkedin.com/in/bendibuz/">LinkedIn</a> page. You can read some of my writing on my SubStack, <a href="https://followtheyarn.substack.com/">Follow the Yarn.</a></p>
-          </div>
+  <body style="font-family: 'Roboto', sans-serif">
+    <nav class="navbar is-fixed-top has-shadow is-tab trans">
+      <a
+        class="
+          navbar-item
+          active
+          is-size-4-mobile is-size-4-tablet is-size-5-desktop
+        "
+        href="#/"
+        id="btn-web"
+        ><span>Web Development</span></a
+      >
+      <a
+        class="navbar-item is-size-4-mobile is-size-4-tablet is-size-5-desktop"
+        href="#/"
+        id="btn-eng"
+        ><span>Engineering</span></a
+      >
+    </nav>
+    <section class="hero is-large hero-background is-dark">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title is-size-1 level-item is-spaced">BEN DIBUZ</h1>
+          <h2 class="subtitle level-item is-size-4">
+            Engineer, Curious Person
+          </h2>
         </div>
       </div>
-    </div>
+    </section>
 
-    <div class="section">
-      <div class="container">
-        <h1 class="title is-size-1">SKILLS</h1>
-
-        <div class="tile is-ancestor has-shadow">
-          <div class="tile is-parent">
-            <div class="tile is-child box">
-              <h2 class="title is-size-4  level-item">JavaScript</h2>
-              <span style="font-size: 4em" class="level-item"><i class="fab fa-js"></i></span>
-            </div>
-          </div>
-
-          <div class="tile is-parent">
-            <div class="tile is-child box">
-              <h2 class="title is-size-4 level-item">CSS3</h2>
-              <span style="font-size: 4em" class="level-item"><i class="fab fa-css3-alt"></i></span>
-            </div>
-          </div>
-
-          <div class="tile is-parent">
-            <div class="tile is-child box">
-              <h2 class="title is-size-4 level-item">HTML5</h2>
-              <span style="font-size: 4em" class="level-item"><i class="fab fa-html5"></i></span>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="tile is-ancestor has-shadow">
-          <div class="tile is-parent">
-            <div class="tile is-child box">
-              <h2 class="title is-size-4  level-item">NPM</h2>
-              <span style="font-size: 4em" class="level-item"><i class="fab fa-npm"></i></span>
-            </div>
-          </div>
-
-          <div class="tile is-parent">
-            <div class="tile is-child box">
-              <h2 class="title is-size-4 level-item">React</h2>
-              <span style="font-size: 4em" class="level-item"><i class="fab fa-react"></i></span>
-            </div>
-          </div>
-
-          <div class="tile is-parent">
-            <div class="tile is-child box">
-              <h2 class="title is-size-4 level-item">Git</h2>
-              <span style="font-size: 4em" class="level-item"><i class="fab fa-git-square"></i></span>
+    <div
+      id="web-dev"
+      class=""
+      style="
+        background-image: url(src/assets/memphis-mini.png);
+        background-repeat: repeat;
+        background-attachment: fixed;
+      "
+    >
+      <div class="section">
+        <div class="container">
+          <h1 class="title is-size-1">ABOUT ME</h1>
+          <div class="card">
+            <div class="card-content">
+              <p class="is-size-6">
+                I am a mechanical engineer studying web development, python,
+                data analytics, algorithms and data visualization in my free
+                time, working to pivot into a role where I can apply more of
+                these skills. You can learn more about me on my
+                <a href="https://www.linkedin.com/in/bendibuz/">LinkedIn</a>
+                page. You can read some of my writing on my SubStack,
+                <a href="https://followtheyarn.substack.com/"
+                  >Follow the Yarn.</a
+                >
+              </p>
             </div>
           </div>
         </div>
+      </div>
 
-        <div class="tile is-ancestor has-shadow">
-          <div class="tile is-parent">
-            <div class="tile is-child box">
-              <h2 class="title is-size-4  level-item">Python</h2>
-              <span style="font-size: 4em" class="level-item"><i class="fab fa-python"></i></span>
+      <div class="section">
+        <div class="container">
+          <h1 class="title is-size-1">SKILLS</h1>
+
+          <div class="tile is-ancestor has-shadow">
+            <div class="tile is-parent">
+              <div class="tile is-child box">
+                <h2 class="title is-size-4 level-item">JavaScript</h2>
+                <span style="font-size: 4em" class="level-item"
+                  ><i class="fab fa-js"></i
+                ></span>
+              </div>
+            </div>
+
+            <div class="tile is-parent">
+              <div class="tile is-child box">
+                <h2 class="title is-size-4 level-item">CSS3</h2>
+                <span style="font-size: 4em" class="level-item"
+                  ><i class="fab fa-css3-alt"></i
+                ></span>
+              </div>
+            </div>
+
+            <div class="tile is-parent">
+              <div class="tile is-child box">
+                <h2 class="title is-size-4 level-item">HTML5</h2>
+                <span style="font-size: 4em" class="level-item"
+                  ><i class="fab fa-html5"></i
+                ></span>
+              </div>
             </div>
           </div>
 
-          <div class="tile is-parent">
-            <div class="tile is-child box">
-              <h2 class="title is-size-4 level-item">SQL</h2>
-              <span style="font-size: 4em" class="level-item"><i class="fas fa-database"></i></span>
+          <div class="tile is-ancestor has-shadow">
+            <div class="tile is-parent">
+              <div class="tile is-child box">
+                <h2 class="title is-size-4 level-item">NPM</h2>
+                <span style="font-size: 4em" class="level-item"
+                  ><i class="fab fa-npm"></i
+                ></span>
+              </div>
+            </div>
+
+            <div class="tile is-parent">
+              <div class="tile is-child box">
+                <h2 class="title is-size-4 level-item">React</h2>
+                <span style="font-size: 4em" class="level-item"
+                  ><i class="fab fa-react"></i
+                ></span>
+              </div>
+            </div>
+
+            <div class="tile is-parent">
+              <div class="tile is-child box">
+                <h2 class="title is-size-4 level-item">Git</h2>
+                <span style="font-size: 4em" class="level-item"
+                  ><i class="fab fa-git-square"></i
+                ></span>
+              </div>
             </div>
           </div>
 
+          <div class="tile is-ancestor has-shadow">
+            <div class="tile is-parent">
+              <div class="tile is-child box">
+                <h2 class="title is-size-4 level-item">Python</h2>
+                <span style="font-size: 4em" class="level-item"
+                  ><i class="fab fa-python"></i
+                ></span>
+              </div>
+            </div>
+
+            <div class="tile is-parent">
+              <div class="tile is-child box">
+                <h2 class="title is-size-4 level-item">SQL</h2>
+                <span style="font-size: 4em" class="level-item"
+                  ><i class="fas fa-database"></i
+                ></span>
+              </div>
+            </div>
+          </div>
         </div>
-
-      </div> <!-- container -->
-    </div> <!-- section -->
+        <!-- container -->
+      </div>
+      <!-- section -->
 
       <div class="section">
         <div class="container">
@@ -193,25 +243,47 @@
                     <h2 class="card-header-title">Roguelike Dungeon Crawler</h2>
                   </div>
                   <div class="card-image">
-                    <a href="https://musing-bell-a11d8f.netlify.com/" target="_blank">
+                    <a
+                      href="https://musing-bell-a11d8f.netlify.com/"
+                      target="_blank"
+                    >
                       <figure class="image is-3by2">
-                        <img src="src/assets/dungeon.jpg" alt="">
+                        <img src="src/assets/dungeon.jpg" alt="" />
                       </figure>
                     </a>
                   </div>
-                  <div class="card-content" style="height: 250px;">
-                    <div class="tags"><span class="tag">HTML5</span><span class="tag">CSS</span><span class="tag">Javascript</span><span class="tag">React</span></div>
-                    <p style="">A simple JS/CSS game in continuous development with a friend of mine - randomly generated dungeon layouts, iterative level expansion, and loads of bad humor.</p>
+                  <div class="card-content" style="height: 250px">
+                    <div class="tags">
+                      <span class="tag">HTML5</span><span class="tag">CSS</span
+                      ><span class="tag">Javascript</span
+                      ><span class="tag">React</span>
+                    </div>
+                    <p style="">
+                      A simple JS/CSS game in continuous development with a
+                      friend of mine - randomly generated dungeon layouts,
+                      iterative level expansion, and loads of bad humor.
+                    </p>
                   </div>
                   <div class="card-footer">
-                    <a href="https://musing-bell-a11d8f.netlify.com/" target="_blank" class="card-footer-item is-size-6 foot has-text-black">Hosted <span style="font-size: 1.5em; margin: 10px"><i class="fas fa-desktop"></i></span></a>
-                    <a href="https://github.com/Pawtang/roguelike" target="_blank" class="card-footer-item is-size-6 foot has-text-black">Source Code<span style="font-size: 1.5em; margin: 10px"><i class="fab fa-github-square"></i></span></a>
+                    <a
+                      href="https://musing-bell-a11d8f.netlify.com/"
+                      target="_blank"
+                      class="card-footer-item is-size-6 foot has-text-black"
+                      >Hosted
+                      <span style="font-size: 1.5em; margin: 10px"
+                        ><i class="fas fa-desktop"></i></span
+                    ></a>
+                    <a
+                      href="https://github.com/Pawtang/roguelike"
+                      target="_blank"
+                      class="card-footer-item is-size-6 foot has-text-black"
+                      >Source Code<span style="font-size: 1.5em; margin: 10px"
+                        ><i class="fab fa-github-square"></i></span
+                    ></a>
                   </div>
                 </div>
               </div>
             </div>
-
-
 
             <div class="tile is-parent">
               <div class="tile is-child">
@@ -220,40 +292,71 @@
                     <h2 class="card-header-title">Web Scrape for Names</h2>
                   </div>
                   <div class="card-image">
-                    <a href="https://github.com/Pawtang/spyder-web-crawl" target="_blank">
+                    <a
+                      href="https://github.com/Pawtang/spyder-web-crawl"
+                      target="_blank"
+                    >
                       <figure class="image is-3by2">
-                        <img src="src/assets/vscode.JPG" alt="">
+                        <img src="src/assets/vscode.JPG" alt="" />
                       </figure>
                     </a>
                   </div>
-                  <div class="card-content" style="height: 250px;">
-                    <div class="tags"><span class="tag">Python</span><span class="tag">beautifulsoup4</span><span class="tag">nltk</span></div>
-                    <p style="">Continuing to learn Python, using beautifulsoup4 and nltk to scrape New York Times for names, then push those names to a csv document. Intent to import the list into the Dungeon Crawler project and use them as monster names.</p>
+                  <div class="card-content" style="height: 250px">
+                    <div class="tags">
+                      <span class="tag">Python</span
+                      ><span class="tag">beautifulsoup4</span
+                      ><span class="tag">nltk</span>
+                    </div>
+                    <p style="">
+                      Continuing to learn Python, using beautifulsoup4 and nltk
+                      to scrape New York Times for names, then push those names
+                      to a csv document. Intent to import the list into the
+                      Dungeon Crawler project and use them as monster names.
+                    </p>
                   </div>
                   <div class="card-footer">
-                    <a href="https://github.com/Pawtang/spyder-web-crawl" target="_blank" class="card-footer-item is-size-6 foot has-text-black">Source Code<span style="font-size: 1.5em; margin: 10px"><i class="fab fa-github-square"></i></span></a>
+                    <a
+                      href="https://github.com/Pawtang/spyder-web-crawl"
+                      target="_blank"
+                      class="card-footer-item is-size-6 foot has-text-black"
+                      >Source Code<span style="font-size: 1.5em; margin: 10px"
+                        ><i class="fab fa-github-square"></i></span
+                    ></a>
                   </div>
                 </div>
               </div>
             </div>
-
           </div>
         </div>
       </div>
     </div>
 
     <!-- ENGINEERING -->
-    <div id="eng" class="is-hidden" style="background-image: url(src/assets/geometry2.png); background-repeat: repeat; background-attachment: fixed;">
+    <div
+      id="eng"
+      class="is-hidden"
+      style="
+        background-image: url(src/assets/geometry2.png);
+        background-repeat: repeat;
+        background-attachment: fixed;
+      "
+    >
       <div class="section">
         <div class="container">
           <h1 class="title is-size-1">ABOUT ME</h1>
           <div class="card">
             <div class="card-content">
-              <p class="is-size-6">I am a mechanical engineer learning about web development in my free time, working on freelance and personal projects. I have about 3 years of casual experience building static sites with vanilla HTML and CSS, and
-                about 3 months of
-                experience with functional coding for dynamic sites. I have spent some time at work building out relational databases and small apps based on those databases. I'm currently focused on learning front-end development, but eventually
-                plan
-                to tie this into some back end knowledge to become a full-stack developer. </p>
+              <p class="is-size-6">
+                I am a mechanical engineer studying web development, python,
+                data analytics, algorithms and data visualization in my free
+                time, working to pivot into a role where I can apply more of
+                these skills. You can learn more about me on my
+                <a href="https://www.linkedin.com/in/bendibuz/">LinkedIn</a>
+                page. You can read some of my writing on my SubStack,
+                <a href="https://followtheyarn.substack.com/"
+                  >Follow the Yarn.</a
+                >
+              </p>
             </div>
           </div>
         </div>
@@ -263,37 +366,41 @@
         <div class="container">
           <h1 class="title is-size-1">SKILLS</h1>
           <div class="tile is-ancestor has-shadow">
-
             <div class="tile is-parent">
               <div class="tile is-child box">
-                <h2 class="title is-size-4  level-item">SolidWorks</h2>
-                <span style="font-size: 4em" class="level-item"><i class="fas fa-cube"></i></span>
+                <h2 class="title is-size-4 level-item">SolidWorks</h2>
+                <span style="font-size: 4em" class="level-item"
+                  ><i class="fas fa-cube"></i
+                ></span>
               </div>
             </div>
 
             <div class="tile is-parent">
               <div class="tile is-child box">
                 <h2 class="title is-size-4 level-item">Tooling Design</h2>
-                <span style="font-size: 4em" class="level-item"><i class="fas fa-toolbox"></i></span>
+                <span style="font-size: 4em" class="level-item"
+                  ><i class="fas fa-toolbox"></i
+                ></span>
               </div>
             </div>
 
             <div class="tile is-parent">
               <div class="tile is-child box">
                 <h2 class="title is-size-4 level-item">Project Management</h2>
-                <span style="font-size: 4em" class="level-item"><i class="fas fa-project-diagram"></i></span>
-
+                <span style="font-size: 4em" class="level-item"
+                  ><i class="fas fa-project-diagram"></i
+                ></span>
               </div>
             </div>
 
             <div class="tile is-parent">
               <div class="tile is-child box">
                 <h2 class="title is-size-4 level-item">Product Design</h2>
-                <span style="font-size: 4em" class="level-item"><i class="fas fa-pencil-ruler"></i></span>
+                <span style="font-size: 4em" class="level-item"
+                  ><i class="fas fa-pencil-ruler"></i
+                ></span>
               </div>
             </div>
-
-
           </div>
         </div>
       </div>
@@ -312,12 +419,18 @@
                   <div class="card-image">
                     <a href="desklamp.html">
                       <figure class="image is-3by2">
-                        <img src="images/lamp/3-2-img.jpg" alt="">
+                        <img src="images/lamp/3-2-img.jpg" alt="" />
                       </figure>
                     </a>
                   </div>
                   <div class="card-footer">
-                    <a href="desklamp.html" class="card-footer-item is-size-6 foot has-text-black">See How I Built This<span style="font-size: 1.5em; margin: 10px"><i class="fas fa-desktop"></i></span></a>
+                    <a
+                      href="desklamp.html"
+                      class="card-footer-item is-size-6 foot has-text-black"
+                      >See How I Built This<span
+                        style="font-size: 1.5em; margin: 10px"
+                        ><i class="fas fa-desktop"></i></span
+                    ></a>
                   </div>
                 </div>
               </div>
@@ -332,12 +445,18 @@
                   <div class="card-image">
                     <a href="endgrain.html">
                       <figure class="image is-3by2">
-                        <img src="images/board/3-2-board.jpg" alt="">
+                        <img src="images/board/3-2-board.jpg" alt="" />
                       </figure>
                     </a>
                   </div>
                   <div class="card-footer">
-                    <a href="endgrain.html" class="card-footer-item is-size-6 foot has-text-black">See How I Built This<span style="font-size: 1.5em; margin: 10px"><i class="fas fa-desktop"></i></span></a>
+                    <a
+                      href="endgrain.html"
+                      class="card-footer-item is-size-6 foot has-text-black"
+                      >See How I Built This<span
+                        style="font-size: 1.5em; margin: 10px"
+                        ><i class="fas fa-desktop"></i></span
+                    ></a>
                   </div>
                 </div>
               </div>
@@ -351,12 +470,18 @@
                   <div class="card-image">
                     <a href="srdesign.html">
                       <figure class="image is-3by2">
-                        <img src="images/senior/3-2-sr.jpg" alt="">
+                        <img src="images/senior/3-2-sr.jpg" alt="" />
                       </figure>
                     </a>
                   </div>
                   <div class="card-footer">
-                    <a href="srdesign.html" class="card-footer-item is-size-6 foot has-text-black">See How I Built This<span style="font-size: 1.5em; margin: 10px"><i class="fas fa-desktop"></i></span></a>
+                    <a
+                      href="srdesign.html"
+                      class="card-footer-item is-size-6 foot has-text-black"
+                      >See How I Built This<span
+                        style="font-size: 1.5em; margin: 10px"
+                        ><i class="fas fa-desktop"></i></span
+                    ></a>
                   </div>
                 </div>
               </div>
@@ -369,14 +494,23 @@
     <footer class="footer">
       <div class="buttons is-centered">
         <div class="has-text centered">
-          <a href="src/assets/ben-dibuz-resume.docx" class="button is-medium is-info is-bold">Download Resume<span style="font-size: 1em; margin: 10px"><i class="far fa-arrow-alt-circle-down"></i></span></a>
-          <a href="https://github.com/Pawtang" class="button is-medium" target="_blank">View Github<span style="font-size: 1em; margin: 10px"><i class="fab fa-github-square"></i></span></a>
+          <a
+            href="src/assets/ben-dibuz-resume.docx"
+            class="button is-medium is-info is-bold"
+            >Download Resume<span style="font-size: 1em; margin: 10px"
+              ><i class="far fa-arrow-alt-circle-down"></i></span
+          ></a>
+          <a
+            href="https://github.com/Pawtang"
+            class="button is-medium"
+            target="_blank"
+            >View Github<span style="font-size: 1em; margin: 10px"
+              ><i class="fab fa-github-square"></i></span
+          ></a>
         </div>
       </div>
     </footer>
 
-
     <script src="app.js"></script>
-</body>
-
+  </body>
 </html>
